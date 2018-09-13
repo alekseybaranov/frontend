@@ -6,10 +6,10 @@ const fs = require('fs');
 const server = http.createServer(function(request, response) {
   console.log(request.method, request.url);
   if (request.url == '/style.css') {
-    const css = fs.readFileSync('style.css', 'utf8');
+    const css = fs.readFileSync('./public/style.css', 'utf8');
     response.end(css);
   } else {
-    const text = fs.readFileSync('index.html', 'utf8');
+    const text = fs.readFileSync('./public/index.html', 'utf8');
     response.end(text);
   }
 });
