@@ -21,12 +21,8 @@ const liveSectionsCollection = application.getElementsByTagName('section');
 
 nav.addEventListener('click', function (event) {
   const sectionId = event.target.getAttribute('data-section');
-  console.log(sectionId);
-
-  //console.log(liveSectionsCollection);
 
   const liveSectionsArray = Array.from(liveSectionsCollection);
-
 
   liveSectionsArray.forEach(function (sectionElement) {
     sectionElement.hidden = true;
@@ -34,14 +30,10 @@ nav.addEventListener('click', function (event) {
       sectionElement.hidden = false;
     }
   });
-  
-  
 });
-
-
 
 const greeting = document.getElementsByClassName('greeting')[0];
 
-greeting.addEventListener('click', () => {
-  greeting.classList.add('hidden');
-}, false);
+//greeting.addEventListener('click', () => {
+//  greeting.classList.add('hidden');
+//}, false);
