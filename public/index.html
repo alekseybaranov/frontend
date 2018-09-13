@@ -7,7 +7,30 @@
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <div class="greeting">Привет, Frontend</div>
+  <div id="application">
+    <h1>Это моё первое приложение</h1>
+    <nav id="navigation"></nav>
+
+    <section id="login" hidden>
+      <h2>Войдите</h2>
+      <form action="" id="login-form">
+          <input type="text" name="username" placeholder="Введите ваше имя">
+          <br>
+          <input type="text" name="email" placeholder="Введите ваш e-mail">
+          <br>
+          <input type="submit" name="login-button" value="Войти">
+        </form>
+    </section>
+
+    <section id="profile" hidden>
+      <h2>Меня зовут <span>Алексей</span></h2>
+      <p>Я очень <strong>крут</strong></p>
+    </section>
+
+    <section id="about" hidden>
+      <h2>Javascript forever</h2>
+    </section>
+  </div>
   
   
   <script src="./main.js"></script>
