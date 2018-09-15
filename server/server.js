@@ -94,11 +94,14 @@ app.engine(`hbs`, hbs( {
 }))
 app.set('view engine', 'hbs')
 
-//console.log(app);
+// Промежуточное ПО обработки статических файлов
+app.use(express.static(publicDir));             // каталог статических файлов
+
+console.log(app);
 
 
 
-app.get('/', function(req, res) {
+app.get('/home', function(req, res) {
   res.render('home');
 });
 
