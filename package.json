@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/alekseybaranov/frontend/issues"
   },
-  "homepage": "https://github.com/alekseybaranov/frontend#readme"
+  "homepage": "https://github.com/alekseybaranov/frontend#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "nconf": "^0.10.0"
+  }
 }
